@@ -21,6 +21,7 @@ from rest_framework.response import Response
 @api_view(["GET"])
 def health_check(request):
     return Response({"status": "ok", "service": "cmrs-api"})
+<<<<<<< HEAD
 import os
 from django.core.management import call_command
 from rest_framework.decorators import api_view, permission_classes
@@ -52,3 +53,5 @@ def seed_demo_data(request):
             {"detail": "Seeding failed. Check the Render logs."},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR,
         )
+=======
+>>>>>>> 120e1d9eee648063b7d1519a57ed6c21f971a6a0
